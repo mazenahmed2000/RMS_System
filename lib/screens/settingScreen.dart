@@ -28,7 +28,7 @@ class _SettingScreenState extends State<SettingScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                height: 150,
+                height: 160,
               ),
               Switch(
                 value: switchValue,
