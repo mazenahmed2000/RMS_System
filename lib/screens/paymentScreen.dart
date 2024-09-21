@@ -14,7 +14,7 @@ class PaymentScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: gColor,
+      backgroundColor: const Color.fromARGB(255, 186, 176, 158),
       appBar: MyAppBar(appBar:AppBar()),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
