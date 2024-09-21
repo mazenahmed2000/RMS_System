@@ -19,7 +19,7 @@ class _SettingScreenState extends State<SettingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: gColor,
+      backgroundColor: const Color.fromARGB(255, 45, 30, 5),
       appBar: MyAppBar(appBar: AppBar()),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
