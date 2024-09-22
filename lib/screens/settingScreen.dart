@@ -3,6 +3,8 @@ import 'package:romaisaa/elements/AppointmentsTable.dart';
 import 'package:romaisaa/elements/SideBar.dart';
 import 'package:romaisaa/elements/logoElement.dart';
 import 'package:romaisaa/elements/myAppBar.dart';
+import 'package:romaisaa/main.dart';
+
 import 'package:romaisaa/screens/HomeScreen.dart';
 import 'package:romaisaa/screens/testScreen.dart';
 
@@ -14,12 +16,12 @@ class SettingScreen extends StatefulWidget {
 }
 
 class _SettingScreenState extends State<SettingScreen> {
-  bool switchValue = true;
+  bool switchValue = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 45, 30, 5),
+      backgroundColor: const Color.fromARGB(255, 225, 222, 217),
       appBar: MyAppBar(appBar: AppBar()),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -33,6 +35,7 @@ class _SettingScreenState extends State<SettingScreen> {
               Switch(
                 value: switchValue,
                 onChanged: (value) {
+                  isDark = !isDark;
                   setState(() {
                     switchValue = value;
                   });

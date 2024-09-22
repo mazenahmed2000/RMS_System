@@ -14,8 +14,8 @@ class MedicalRecordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: gColor,
-      appBar: MyAppBar(appBar:AppBar()),
+      backgroundColor: const Color.fromARGB(255, 225, 222, 217),
+      appBar: MyAppBar(appBar: AppBar()),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[

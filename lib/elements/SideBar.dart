@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:romaisaa/main.dart';
 import 'package:romaisaa/screens/HomeScreen.dart';
 import 'package:romaisaa/screens/SubscriptionScreen.dart';
 import 'package:romaisaa/screens/medicalRecordScreen.dart';
@@ -36,7 +37,6 @@ class SideBarWidget extends StatelessWidget {
                   fullscreenDialog: true,
                   builder: (BuildContext context) {
                     return HomeScreen();
-                    
                   },
                 ),
               );
@@ -137,7 +137,9 @@ class SelectedCategory extends StatelessWidget {
       child: Center(child: Text(name)),
       width: 85,
       decoration: BoxDecoration(
-        color: Color.fromARGB(127, 191, 93, 60),
+        color: (isDark
+            ? const Color.fromARGB(158, 54, 71, 89)
+            : Color.fromARGB(127, 191, 93, 60)),
         borderRadius: BorderRadius.circular(15),
       ),
     );
