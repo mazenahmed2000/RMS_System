@@ -13,7 +13,7 @@ const bColor = Color.fromARGB(255, 54, 71, 89);
 const dgColor = Color.fromARGB(255, 116, 125, 120);
 
 class HomeScreen extends StatelessWidget {
-   HomeScreen({super.key});
+  HomeScreen({super.key});
   bool switchValue = true;
 
   @override

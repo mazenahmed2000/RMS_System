@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/HomeScreen.dart';
 
+bool isDark = false;
 void main() {
   runApp(MyApp());
 }

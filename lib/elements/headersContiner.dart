@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:romaisaa/elements/titleElement.dart';
+import 'package:romaisaa/main.dart';
 import 'package:romaisaa/screens/HomeScreen.dart';
 
 class HeadersContainer extends StatelessWidget {
@@ -11,7 +12,7 @@ class HeadersContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(10),
-      color: orColor,
+      color: (isDark ? bColor : orColor),
       width: 1200,
       height: 80,
       child: Row(
